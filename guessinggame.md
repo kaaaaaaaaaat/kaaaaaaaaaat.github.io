@@ -11,3 +11,4 @@ check --> no
 no --> retry([output: oops! you did not guess the number :/ try again!])
 retry --> random
 ```
+this is a simple algorithm that generates a random number from 1-10 and prompts the user to guess it. if the user guesses correctly, the program congratulates them and ends. if the user guesses incorrectly, it instructs them to try again, and re generates a number for them to guess, bringing the sequence back to step 3.
