@@ -38,12 +38,11 @@ function populateGradebook(data) {
             columns.grade.appendChild(
                 document.createTextNode(assignment.total_grade)
             );
-            row.appendChild(columns_name);
+            row.appendChild(columns.name);
             row.appendChild(columns.grade)
             tableElm.appendChild(row);
         });  
         
 }
 // Call the stubs to demonstrate the workflow
-const gradeData = fetchGradeData();
-populateGradebook(gradeData);
+fetchGradeData();
